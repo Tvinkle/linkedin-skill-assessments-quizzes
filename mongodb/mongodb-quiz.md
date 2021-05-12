@@ -236,7 +236,7 @@
 - [ ] access the database
 - [ ] be called only when the key has a single value
 - [ ] access the database only to perform read operations
-- [x] not access the data
+- [x] not access the database
 
 #### Q35. On a newly created collection, which field will have an index?
 
@@ -435,21 +435,37 @@
 - [ ] `The oplog will stop recording logging information`
 
 #### Q63. MongoDB ships with a variety of files. Which file runs the MongoDB shell?
-
 - [X] mongo
-
 - [ ] mongo-s
-
 - [ ] shell
-
 - [ ] mongo-shell
 
 #### Q64. How can you view the execution performance statistics for a query?
-
 - [ ] `db.performance.members.aggregate([ {$match: {gender: "Female"}}, {$group: {_id:{city:"$city"}, number: {$sum: 1}}}, {$sort : {number: -1}}])`
-
 - [ ] `db.members.aggregate([ {$match: {gender: "Female"}}, {$group: {_id: {city: "$city"}, number:{$sum:1}}}, {$sort: {number:-1}}]).explain("executionStats")`
-
 - [ ] `db.members.aggregate([ {$match: {gender: "Female"}}, {$group:{_id: {city: "$city"}, number: {$sum: 1}}}, {$sort: {number: -1}}]).explain()`
-
 - [ ] `db.members.aggregate([ {$match: {gender: """Female"""}}, {$group: {_id: {city: """$city"""}, number: {$sum:1}}}, {$sort: {number: -1}}]).number()`
+
+#### Q65. After installing MongoDB on your machine, what must you do before launching Mongo?After installing MongoDB on your machine, what must you do before launching Mongo?
+- [ ] Register online.
+- [x] Create a user account.
+- [ ] Establish security credentials.
+- [ ] Create a data directory.
+
+#### Q66. You have two text fields in your document, and you want both to be quickly searchable. What should you do?You have two text fields in your document, and you want both to be quickly searchable. What should you do?
+- [ ] Create a text index on one field and a single field index on the other.
+- [x] Create a compound text index using both fields.
+- [ ] Create a text index on each field.
+- [ ] MongoDB is not able to do this.
+
+#### Q67. On a secure database, you need to give someone access to the database, but they should not be able to change it in any form. What access should you give them?On a secure database, you need to give someone access to the database, but they should not be able to change it in any form. What access should you give them?
+- [ ] read
+- [ ] minimum
+- [x] user
+- [ ] dbadmin
+
+#### Q68. How do you create a new MongoDB user?How do you create a new MongoDB user?
+- [ ] db.newUser({})
+- [x] db.createUser({})
+- [ ] db.customers.newUser({})
+- [ ] db.insert({user: 1})
