@@ -137,3 +137,44 @@ class TestConfig {
 - [ ] @RequiresRole
 - [ ] @RestrictedTo
 - [ ] @SecurePath
+
+#### Q16. Which are considered to be typical, common, cross-cutting concerns that would be a good fit for AOP? (Choose 3.) Which are considered to be typical, common, cross-cutting concerns that would be a good fit for AOP? (Choose 3.)
+```
+A.  Creating SQL queries 
+B.  Logging
+C.  Filtering, sorting and transforming data
+D.  Transaction management
+E.  Audit logging
+F.  Business logic 
+```
+- [ ] D, E, F
+- [ ] A, D, F
+- [ ] B, D, E
+- [ ] A, B, F
+
+#### Q17. Which Actuator endpoint might have returned this response? Which Actuator endpoint might have returned this response?
+```
+{"status":"UP"}
+```
+ - [ ] /conditions
+ - [x] /health
+ - [ ] /info
+ - [ ] /metrics
+
+#### Q18. What does @SpringBootApplication do?
+- [ ] This compound annotation applies @Bootable, @Springify, and @StandardConfig annotations that launch a CLI tool after launching the Spring Boot WAR file that will guide you through a series of prompts to set your app
+- [ ] This annotation takes the Spring literal passed into anotation as a parameter and automatically generates all the code for your application as per the passed in the template parameter
+- [x] This composite annotation-which includes @Configuration, @EnableAutoConfiguration, and @ComponentScan-triggers autoconfiguration of Spring and component scanning in the base package for the components to add to the application context
+- [ ] This annotation scans the provided spring-boot-config-construction.yaml file in your root directory and automatically generates all the code of your application as defined in the YAML file
+
+#### Q19. What is the purpose of the Spring IoC (Inversion of Control) container?
+- [ ] It facilitates a remote server to onfigure a local application
+- [ ] It allows the front-end code to manage the ResponseBody objects provided by a back-end REST API
+- [ ] It allows a database to define business objects via a shared schema at compile time
+- [x] It instantiates and configures objects, supplied at runtime, to classes that define them as dependency
+
+#### Q20. How do you inject a dependency into a Spring bean?
+- [ ] Specify parameters in the constructor with an optional @Autowired annotation
+- [ ] Use field injection
+- [ ] any of these answers
+- [ ] Annotate Setter method with the @Autowired annotation
